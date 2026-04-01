@@ -6,6 +6,11 @@ public class Battleship {
 
 		char[][] player1_board = shipPlacement("Player 1");
 		printBattleShip(player1_board);
+		print100();
+
+		char[][] player2_board = shipPlacement("Player 2");
+		printBattleShip(player2_board);
+		print100();
 
 		
 
@@ -39,6 +44,12 @@ public class Battleship {
 		}
 
 			return gameBoard;
+	}
+
+	private static void print100() {
+		for (int i = 0; i < 101; i++) {
+			System.out.println(" ");
+		}
 	}
 
 	private static char[][] shipPlacement(String playerName) {
